@@ -2,7 +2,7 @@ package ie.atu.productv6;
 
 import java.text.NumberFormat;
 
-public class Product {
+public class Product implements Productable{
 
     private String code;
     private String description;

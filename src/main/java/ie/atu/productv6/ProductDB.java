@@ -2,13 +2,13 @@ package ie.atu.productv6;
 
 public class ProductDB {
 
-    public static Product getProduct(String productCode) {
+    public static Productable getProduct(String productCode) {
         // In a more realistic application, this code would
         // get the data for the product from a file or database
         // For now, this code just uses if/else statements
         // to return the correct product data
 
-        Product p = null;
+        Productable p = null;
 
         if (productCode.equalsIgnoreCase("java"))
         {
@@ -110,6 +110,36 @@ public class ProductDB {
             myTV.setScreenSize("24");
             myTV.setBrand("Toshiba");
             p = myTV;
+        }
+
+        if (productCode.equalsIgnoreCase("BOB"))
+        {
+            Horse myHorse = new Horse();
+            myHorse.setType("Horse");
+            myHorse.setAge(11);
+            myHorse.setBreed("Gelding");
+            myHorse.setPrice(11000);
+            myHorse.setDam("Cat");
+            myHorse.setSire("Dad");
+
+        } else if (productCode.equalsIgnoreCase("Cillian")) {
+            Horse myHorse = new Horse();
+            myHorse.setType("Horse");
+            myHorse.setAge(8);
+            myHorse.setBreed("Shetland");
+            myHorse.setPrice(3000);
+            myHorse.setDam("Short");
+            myHorse.setSire("Long");
+
+        } else if (productCode.equalsIgnoreCase("Barbie")) {
+            Horse myHorse = new Horse();
+            myHorse.setType("Horse");
+            myHorse.setAge(3);
+            myHorse.setBreed("Shire");
+            myHorse.setPrice(13500);
+            myHorse.setDam("Big");
+            myHorse.setSire("Smol");
+
         }
         return p;
     }
