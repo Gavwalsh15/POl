@@ -6,6 +6,7 @@ public class ProductApp {
 
     public static void main(String args[]) {
         // display a welcome message
+        int combined = 0;
         System.out.println("Welcome to the Product Viewer");
         System.out.println();
 
@@ -30,7 +31,8 @@ public class ProductApp {
             }
 
             System.out.println();
-            System.out.println("Product count: " + Product.getCount() + "\n");
+            combined = Product.getCount() + Animal.getCount();
+            System.out.println("Product count: " + combined + "\n");
 
             // see if the user wants to continue
             System.out.print("Continue? (y/n): ");

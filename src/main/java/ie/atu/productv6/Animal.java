@@ -38,9 +38,12 @@ public class Animal implements Productable{
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "type='" + type + '\'' +
-                ", breed='" + breed + '\'' +
-                ", age=" + age;
+        return "Type: " + type + '\n' +
+                "Breed: " + breed + '\n' +
+                "Age: " + age;
     }
+    public static int getCount() {
+        return count;
+    }
+
 }
