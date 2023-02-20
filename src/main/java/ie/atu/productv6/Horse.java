@@ -10,7 +10,7 @@ public class Horse extends Animal{
         dam = "";
         sire = "";
         height = 0;
-
+        count++;
     }
 
     public String getDam() {return dam;}
@@ -27,10 +27,10 @@ public class Horse extends Animal{
 
     @Override
     public String toString() {
-        return "Horse{" +
-                "dam='" + dam + '\'' +
-                ", sire='" + sire + '\'' +
-                ", height=" + height +
-                '}';
+        return super.toString() +
+                "Dam: " + dam + '\n' +
+                "Sire: " + sire + '\'' +
+                "Height: " + height +
+                '\n';
     }
 }

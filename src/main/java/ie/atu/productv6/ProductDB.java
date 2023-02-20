@@ -121,6 +121,7 @@ public class ProductDB {
             myHorse.setPrice(11000);
             myHorse.setDam("Cat");
             myHorse.setSire("Dad");
+            p = myHorse;
 
         } else if (productCode.equalsIgnoreCase("Cillian")) {
             Horse myHorse = new Horse();
@@ -130,6 +131,7 @@ public class ProductDB {
             myHorse.setPrice(3000);
             myHorse.setDam("Short");
             myHorse.setSire("Long");
+            p = myHorse;
 
         } else if (productCode.equalsIgnoreCase("Barbie")) {
             Horse myHorse = new Horse();
@@ -139,7 +141,41 @@ public class ProductDB {
             myHorse.setPrice(13500);
             myHorse.setDam("Big");
             myHorse.setSire("Smol");
+            p = myHorse;
+        }
+        if (productCode.equalsIgnoreCase("Jess"))
+        {
+            Dog myDog = new Dog();
+            myDog.setType("Dog");
+            myDog.setAge(3);
+            myDog.setBreed("Retvier");
+            myDog.setPrice(360);
+            myDog.setVaccination("Ben");
+            myDog.setShedding("Lucy");
+            myDog.setNeutered(true);
+            p = myDog;
 
+        } else if (productCode.equalsIgnoreCase("Mike")) {
+            Dog myDog = new Dog();
+            myDog.setType("Dog");
+            myDog.setAge(9);
+            myDog.setBreed("Cockapoo");
+            myDog.setPrice(500);
+            myDog.setVaccination("Paul");
+            myDog.setShedding("Pauleen");
+            myDog.setNeutered(false);
+            p = myDog;
+
+        } else if (productCode.equalsIgnoreCase("Mastiff")) {
+            Dog myDog = new Dog();
+            myDog.setType("Dog");
+            myDog.setAge(15);
+            myDog.setBreed("Staffy");
+            myDog.setPrice(500);
+            myDog.setVaccination("Paul");
+            myDog.setShedding("Pauleen");
+            myDog.setNeutered(false);
+            p = myDog;
         }
         return p;
     }
